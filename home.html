@@ -13,6 +13,11 @@
     <!-- link to external css  -->
     <link rel="stylesheet" href="css/style.css">
 
+
+<!-- external js  -->
+    <script src="script/form_validation.js"></script>
+
+
     
 
     <!-- link to font awesome  -->
@@ -54,7 +59,7 @@
                 <li><a href="about_us.html">About Us</a></li>
             </ul>
             <div>
-                <a href=""><i class="fa-solid fa-cart-shopping"></i>Cart</a>
+                <span id="openCart"><i class="fa-solid fa-cart-shopping"></i>Cart <span id="cartCount"></span></span>
                 <button class="btn" id="signUp">Sign up</button>
             </div>
         </nav>
@@ -75,105 +80,107 @@
         <div class="mainContainer">
             <h2 style="text-align: center; padding: 15px;">Weekly Offers</h2>
             <div class="flexContainer">
+                
                     <div class="card">
                         <div class="cardImage">
-                            <img src="static/img/img1.jpg" alt="">
+                            <img class="img" src="static/img/img1.jpg" alt="">
                         </div>
                         <div class="cardTitle">
-                            <h4>
-                                Lige men's watch
+                            <h4 class="productName">
+                               Whoop
                             </h4>
                                 
                         </div>
                         <div class="cardDescription">
                             2025 men's best selling watch.
                         </div>
-                        <div class="price">NPR. <del>4000</del> 2500</div>
+                        <div class="price">NPR. <del>4000</del> <span class="productPrice">1500</span></div>
                         <div class="cardButton">
-                            <button >Add to cart</button>
-                            <button >See Details</button>
+                            <button class="addToCart">Add to cart</button>
+                            
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="cardImage">
-                            <img src="static/img/img2.jpg" alt="">
+                            <img class="img" src="static/img/img2.jpg" alt="">
                         </div>
                         <div class="cardTitle">
-                            <h4>
-                                Lige men's watch
+                            <h4 class="productName">
+                               G-shock
                             </h4>
                                 
                         </div>
                         <div class="cardDescription">
                             2025 men's best selling watch.
                         </div>
-                        <div class="price">NPR. <del>5000</del> 3750</div>
+                        <div class="price">NPR. <del>1000</del> <span class="productPrice">500</span></div>
                         <div class="cardButton">
-                            <button >Add to cart</button>
-                            <button >See Details</button>
+                            <button class="addToCart">Add to cart</button>
+                            
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="cardImage">
-                            <img src="static/img/img3.jpg" alt="">
+                            <img class="img" src="static/img/img3.jpg" alt="">
                         </div>
                         <div class="cardTitle">
-                            <h4>
-                                Lige men's watch
+                            <h4 class="productName">
+                               Whoop
                             </h4>
                                 
                         </div>
                         <div class="cardDescription">
                             2025 men's best selling watch.
                         </div>
-                        <div class="price">NPR. <del>20000</del> 17000</div>
+                        <div class="price">NPR. <del>10000</del> <span class="productPrice">6500</span></div>
                         <div class="cardButton">
-                            <button >Add to cart</button>
-                            <button >See Details</button>
+                            <button class="addToCart">Add to cart</button>
+                            
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="cardImage">
-                            <img src="static/img/img4.jpg" alt="">
+                            <img class="img" src="static/img/img4.jpg" alt="">
                         </div>
                         <div class="cardTitle">
-                            <h4>
-                                Lige men's watch
+                            <h4 class="productName">
+                                Rolex
                             </h4>
                                 
                         </div>
                         <div class="cardDescription">
                             2025 men's best selling watch.
                         </div>
-                        <div class="price">NPR. <del>10000</del> 7999</div>
+                        <div class="price">NPR. <del>4000</del> <span class="productPrice">2500</span></div>
                         <div class="cardButton">
-                            <button >Add to cart</button>
-                            <button >See Details</button>
+                            <button class="addToCart">Add to cart</button>
+                            
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="cardImage">
-                            <img src="static/img/img5.jpg" alt="">
+                            <img class="img" src="static/img/img5.jpg" alt="">
                         </div>
                         <div class="cardTitle">
-                            <h4>
-                                Lige men's watch
+                            <h4 class="productName">
+                                G-shock
                             </h4>
                                 
                         </div>
                         <div class="cardDescription">
                             2025 men's best selling watch.
                         </div>
-                        <div class="price">NPR. <del>45000</del> 40000</div>
+                        <div class="price">NPR. <del>4000</del> <span class="productPrice">3900</span></div>
                         <div class="cardButton">
-                            <button >Add to cart</button>
-                            <button >See Details</button>
+                            <button class="addToCart">Add to cart</button>
+                            
                         </div>
                     </div>
+
             </div>
         </div>
         <!-- weekly offers end  -->
@@ -184,103 +191,101 @@
             <div class="flexContainer">
                     <div class="card">
                         <div class="cardImage">
-                            <img src="static/img/img6.jpg" alt="">
+                            <img class="img" src="static/img/img6.jpg" alt="">
                         </div>
                         <div class="cardTitle">
-                            <h4>
-                                Lige men's watch
+                            <h4 class="productName">
+                                Whoop
                             </h4>
                                 
                         </div>
                         <div class="cardDescription">
                             2025 men's best selling watch.
                         </div>
-                        <div class="price">NPR. 2500</div>
+                        <div class="price">NPR. <span class="productPrice">99500</span></div>
                         <div class="cardButton">
-                            <button >Add to cart</button>
-                            <button >See Details</button>
+                            <button class="addToCart">Add to cart</button>
+                            
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardImage">
+                            <img class="img" src="static/img/img7.jpg" alt="">
+                        </div>
+                        <div class="cardTitle">
+                            <h4 class="productName">
+                               G-shock 
+                            </h4>
+                                
+                        </div>
+                        <div class="cardDescription">
+                            2025 men's best selling watch.
+                        </div>
+                        <div class="price">NPR. <span class="productPrice">9500</span></div>
+                        <div class="cardButton">
+                            <button class="addToCart">Add to cart</button>
+                            
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardImage">
+                            <img class="img" src="static/img/img8.jpg" alt="">
+                        </div>
+                        <div class="cardTitle">
+                            <h4 class="productName">
+                                Cartier
+                            </h4>
+                                
+                        </div>
+                        <div class="cardDescription">
+                            2025 men's best selling watch.
+                        </div>
+                        <div class="price">NPR. <span class="productPrice">112500</span></div>
+                        <div class="cardButton">
+                            <button class="addToCart">Add to cart</button>
+                            
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardImage">
+                            <img class="img" src="static/img/img9.jpg" alt="">
+                        </div>
+                        <div class="cardTitle">
+                            <h4 class="productName">
+                               Whoop
+                            </h4>
+                                
+                        </div>
+                        <div class="cardDescription">
+                            2025 men's best selling watch.
+                        </div>
+                        <div class="price">NPR. <span class="productPrice">9500</span></div>
+                        <div class="cardButton">
+                            <button class="addToCart">Add to cart</button>
+                            
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardImage">
+                            <img class="img" src="static/img/img10.jpg" alt="">
+                        </div>
+                        <div class="cardTitle">
+                            <h4 class="productName">
+                               Rolex
+                            </h4>
+                                
+                        </div>
+                        <div class="cardDescription">
+                            2025 men's best selling watch.
+                        </div>
+                        <div class="price">NPR. <span class="productPrice">29000</span></div>
+                        <div class="cardButton">
+                            <button class="addToCart">Add to cart</button>
+                            
                         </div>
                     </div>
 
-                    <div class="card">
-                        <div class="cardImage">
-                            <img src="static/img/img7.jpg" alt="">
-                        </div>
-                        <div class="cardTitle">
-                            <h4>
-                                Lige men's watch
-                            </h4>
-                                
-                        </div>
-                        <div class="cardDescription">
-                            2025 men's best selling watch.
-                        </div>
-                        <div class="price">NPR. 2500</div>
-                        <div class="cardButton">
-                            <button >Add to cart</button>
-                            <button >See Details</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="cardImage">
-                            <img src="static/img/img8.jpg" alt="">
-                        </div>
-                        <div class="cardTitle">
-                            <h4>
-                                Lige men's watch
-                            </h4>
-                                
-                        </div>
-                        <div class="cardDescription">
-                            2025 men's best selling watch.
-                        </div>
-                        <div class="price">NPR. 2500</div>
-                        <div class="cardButton">
-                            <button >Add to cart</button>
-                            <button >See Details</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="cardImage">
-                            <img src="static/img/img9.jpg" alt="">
-                        </div>
-                        <div class="cardTitle">
-                            <h4>
-                                Lige men's watch
-                            </h4>
-                                
-                        </div>
-                        <div class="cardDescription">
-                            2025 men's best selling watch.
-                        </div>
-                        <div class="price">NPR. 2500</div>
-                        <div class="cardButton">
-                            <button >Add to cart</button>
-                            <button >See Details</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="cardImage">
-                            <img src="static/img/img10.jpg" alt="">
-                        </div>
-                        <div class="cardTitle">
-                            <h4>
-                                Lige men's watch
-                            </h4>
-                                
-                        </div>
-                        <div class="cardDescription">
-                            2025 men's best selling watch.
-                        </div>
-                        <div class="price">NPR. 2500</div>
-                        <div class="cardButton">
-                            <button >Add to cart</button>
-                            <button >See Details</button>
-                        </div>
-                    </div>
+                
             </div>
         </div>
         <!-- new arrivals end  -->
@@ -290,105 +295,101 @@
         <div class="mainContainer">
             <h2 style="text-align: center; padding: 15px;">Top Picks</h2>
             <div class="flexContainer">
-                    <div class="card">
-                        <div class="cardImage">
-                            <img src="static/img/img11.jpg" alt="">
-                        </div>
-                        <div class="cardTitle">
-                            <h4>
-                                Lige men's watch
-                            </h4>
-                                
-                        </div>
-                        <div class="cardDescription">
-                            2025 men's best selling watch.
-                        </div>
-                        <div class="price">NPR. 2500</div>
-                        <div class="cardButton">
-                            <button >Add to cart</button>
-                            <button >See Details</button>
-                        </div>
+                <div class="card">
+                    <div class="cardImage">
+                        <img class="img" src="static/img/img11.jpg" alt="">
                     </div>
-
-                    <div class="card">
-                        <div class="cardImage">
-                            <img src="static/img/img12.jpg" alt="">
-                        </div>
-                        <div class="cardTitle">
-                            <h4>
-                                Lige men's watch
-                            </h4>
-                                
-                        </div>
-                        <div class="cardDescription">
-                            2025 men's best selling watch.
-                        </div>
-                        <div class="price">NPR. 2500</div>
-                        <div class="cardButton">
-                            <button >Add to cart</button>
-                            <button >See Details</button>
-                        </div>
+                    <div class="cardTitle">
+                        <h4 class="productName">
+                           Rolex
+                        </h4>
+                            
                     </div>
-
-                    <div class="card">
-                        <div class="cardImage">
-                            <img src="static/img/img13.jpg" alt="">
-                        </div>
-                        <div class="cardTitle">
-                            <h4>
-                                Lige men's watch
-                            </h4>
-                                
-                        </div>
-                        <div class="cardDescription">
-                            2025 men's best selling watch.
-                        </div>
-                        <div class="price">NPR. 2500</div>
-                        <div class="cardButton">
-                            <button >Add to cart</button>
-                            <button >See Details</button>
-                        </div>
+                    <div class="cardDescription">
+                        2025 men's best selling watch.
                     </div>
-
-                    <div class="card">
-                        <div class="cardImage">
-                            <img src="static/img/img16.jpg" alt="">
-                        </div>
-                        <div class="cardTitle">
-                            <h4>
-                                Lige men's watch
-                            </h4>
-                                
-                        </div>
-                        <div class="cardDescription">
-                            2025 men's best selling watch.
-                        </div>
-                        <div class="price">NPR. 2500</div>
-                        <div class="cardButton">
-                            <button >Add to cart</button>
-                            <button >See Details</button>
-                        </div>
+                    <div class="price">NPR. <span class="productPrice">2500</span></div>
+                    <div class="cardButton">
+                        <button class="addToCart">Add to cart</button>
+                        
                     </div>
-
-                    <div class="card">
-                        <div class="cardImage">
-                            <img src="static/img/img15.jpg" alt="">
-                        </div>
-                        <div class="cardTitle">
-                            <h4>
-                                Lige men's watch
-                            </h4>
-                                
-                        </div>
-                        <div class="cardDescription">
-                            2025 men's best selling watch.
-                        </div>
-                        <div class="price">NPR. 2500</div>
-                        <div class="cardButton">
-                            <button >Add to cart</button>
-                            <button >See Details</button>
-                        </div>
+                </div>
+                <div class="card">
+                    <div class="cardImage">
+                        <img class="img" src="static/img/img12.jpg" alt="">
                     </div>
+                    <div class="cardTitle">
+                        <h4 class="productName">
+                            Cartier 
+                        </h4>
+                            
+                    </div>
+                    <div class="cardDescription">
+                        2025 men's best selling watch.
+                    </div>
+                    <div class="price">NPR. <span class="productPrice">200000</span></div>
+                    <div class="cardButton">
+                        <button class="addToCart">Add to cart</button>
+                        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardImage">
+                        <img class="img" src="static/img/img13.jpg" alt="">
+                    </div>
+                    <div class="cardTitle">
+                        <h4 class="productName">
+                            whoop
+                        </h4>
+                            
+                    </div>
+                    <div class="cardDescription">
+                        2025 men's best selling watch.
+                    </div>
+                    <div class="price">NPR. <span class="productPrice">1300</span></div>
+                    <div class="cardButton">
+                        <button class="addToCart">Add to cart</button>
+                        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardImage">
+                        <img class="img" src="static/img/img15.jpg" alt="">
+                    </div>
+                    <div class="cardTitle">
+                        <h4 class="productName">
+                           Rolex
+                        </h4>
+                            
+                    </div>
+                    <div class="cardDescription">
+                        2025 men's best selling watch.
+                    </div>
+                    <div class="price">NPR. <span class="productPrice">5500</span></div>
+                    <div class="cardButton">
+                        <button class="addToCart">Add to cart</button>
+                        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardImage">
+                        <img class="img" src="static/img/img16.jpg" alt="">
+                    </div>
+                    <div class="cardTitle">
+                        <h4 class="productName">
+                           G-shock
+                        </h4>
+                            
+                    </div>
+                    <div class="cardDescription">
+                        2025 men's best selling watch.
+                    </div>
+                    <div class="price">NPR. <span class="productPrice">2000</span></div>
+                    <div class="cardButton">
+                        <button class="addToCart">Add to cart</button>
+                        
+                    </div>
+                </div>
             </div>
         </div>
         <!-- top picks end  -->
@@ -449,21 +450,23 @@
 
 
     
-         <!-- signup form is hidden using display none and hidden class and the hidden
+    <!-- signup form is hidden using display none and hidden class and the hidden
      class is removed when signup button is clicked -->
      <div class="signUpForm hidden">
         <div class="formContainer">
-            <h3 style="color:white">Sign Up</h3>
-            <form action="">
+            <h3 style="color:rgb(0, 0, 0); text-align: center;">Sign Up</h3>
+            <form name="signUpForm" onsubmit="signUpValidation(event)" >
                 <input  type="text" name="fName" placeholder="First Name">
-                <div id="fnameError"></div>
+                <div class="error" id="fnameError"></div>
                 <input  type="text" name="lName" placeholder="Last Name">
-                <div id="lnameError"></div>
+                <div class="error" id="lnameError"></div>
                 <input type="email" name="email" placeholder="Email">
-                <div id="emailError"></div>
+                <div class="error" id="emailError"></div>
                 <input type="password" name="password1" placeholder="Password">
+                <div class="error" id="password1Error"></div>
                 <input type="password" name="password2" placeholder="Confirm Password">
-                <div id="confirmPasswordError"></div>
+                <div class="error" id="password2Error"></div>
+                <div class="error" id="confirmPasswordError"></div>
                 <div>
                     <button class="btn" type="submit">Submit</button>
                     <button class="btn" id="signUpCancle"  style="background-color: tomato;">Cancle</button>
@@ -472,7 +475,31 @@
         </div>
      </div>
 
+
+
+     <div id="cartList" class="cartBox hidden  ">
+        
+        <div id="cart">
+            <!-- <div class="cartItem">
+                <div class="itemPic"><img src="${image}" alt=""></div>
+                <div class="itemName">${name}</div>
+                <div class="itemPrice">${price}</div>
+                <div class="itemQuantity">1</div>
+                <button class="removeItem btn" style="background-color: tomato;">Remove</button>
+            </div> -->
+                
+            <div class="cartBottom">
+                <div >Total : Nrs. <span id="totalPrice"></span> </div>
+                <button class="btn" id="cartClose"  style="background-color: tomato;">Close</button>
+            </div>
+        </div>
+
+     </div>
+
+
      <!-- link to external js file  -->
     <script src="script/main.js"></script>
+    <script src="script/form_validation.js"></script>
+    <script src="script/cart.js"></script>
 </body>
 </html>

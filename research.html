@@ -8,25 +8,86 @@
       body {
         background-color: #32445f;
       }
-      h1{
-            text-align: center;
-            background-color :#324F5F;
-            font-style: italic;
-        }
-        h2{
-            text-align: center;
-            font-style: italic;
-            font-size: xx-large;
-            color: darkcyan;
-            text-transform: uppercase;
-        }
-        h4{
-          color: #999;
-        }
+      h1 {
+        text-align: center;
+        background-color: #324f5f;
+        font-style: italic;
+      }
+      h2 {
+        text-align: center;
+        font-style: italic;
+        font-size: xx-large;
+        color: rgb(0, 183, 255);
+        text-transform: uppercase;
+      }
+      h4 {
+        color: #999;
+      }
+
+      .main {
+    width: 100%;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.5) 50%,
+        rgba(0, 0, 0, 0.5) 50%
+      ),
+      url(/images/black.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+  }
+  section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.card:hover{
+scale: 1.1;
+transition-duration:0.7s;
 
 
+}
+html{
+    scroll-behavior: smooth;
+}
+.column {
+text-align: center;
+width: 33.33%;
+padding: 5px;
+flex: auto;
+}
+.row{
+    justify-content: "space-between";
+    display: flex;
+    gap: 20px;
 
-
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    padding: 20px;
+}
+.left-text {
+    text-align: left;
+}
+.right-text {
+    text-align:middle;
+}
     </style>
 
     <!-- link to external css  -->
@@ -70,7 +131,7 @@
           <li><a href="product.html">Product</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="research.html">Research</a></li>
-          <li><a href="about_us.html">A    bout Us</a></li>
+          <li><a href="about_us.html">About Us</a></li>
         </ul>
         <div>
           <a href=""><i class="fa-solid fa-cart-shopping"></i>Cart</a>
@@ -82,61 +143,190 @@
 
     <!-- main body starts here  -->
     <main>
-      
-        <h2 style="text-align: center">Research</h2>
+      <h2 style="text-align: center">Research</h2>
+
+      <div class="mainContainer">
+        <hr />
+        <h1>Header</h1>
+        <hr />
+        <div class="row">
+          <div class="column">
+            <h3>Reference form :</h3>
+            <br />
+
+            <a href="https://www.justwatches.com/"
+              ><img src="images/ref home.png" alt="" width="100%" /></a
+            ><br />
+          </div>
+          <div class="column">
+            <h3>Result :</h3>
+            <br />
+            <img src="images/our home.png" alt="" width="100%" /><br />
+          </div>
+        </div>
+        <div class="grid-container">
+          <div class="left-text">
+            <h3>Referenced Header Page</h3>
+            <p>
+              Our team took idea of header from this website. <br />Link for the website:<a
+                href="https://www.justwatches.com/"
+                >View Website</a
+              >
+            </p>
+          </div>
+          <div class="right-text">
+            <h3>Implemented Header Page</h3>
+            <p>
+              After taking the reference from the site, we implemented it to our
+              website after modifying it and also implemented the display picture.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mainContainer">
+        <hr />
+        <h1>Footer</h1>
+        <hr />
+        <div class="row">
+          <div class="column">
+            <h3>Reference form :</h3>
+            <br />
+
+            <a href="https://www.justwatches.com/"
+              ><img src="images/footer ref.png" alt="" width="100%" /></a
+            ><br />
+          </div>
+          <div class="column">
+            <h3>Result :</h3>
+            <br />
+            <img
+              src="images/our footer.png"
+              alt=""
+              width="100%"
+              height="60%"
+            /><br />
+          </div>
+        </div>
+        <div class="grid-container">
+          <div class="left-text">
+            <h3>Referenced footer</h3>
+            <p>
+              We took the footer idea from the same website. <br />Link for the
+              website<a href="https://www.justwatches.com/">View Website</a>
+            </p>
+          </div>
+          <div class="right-text">
+            <h3>Implemented Footer</h3>
+            <p>We modified few thing from the reference and implemented it.</p>
+          </div>
+        </div>
       </div>
       <div class="mainContainer">
-       <hr> <h1>Header</h1><hr>
-        <h3>Reference form :</h3><br>
+        <hr />
+        <h1>Blog</h1>
+        <hr />
+        <div class="row">
+          <div class="column">
+            <h3>Reference form :</h3>
+            <br />
 
-        <a href="https://www.justwatches.com/"><img src="images/ref home.png" alt=""></a><br>
-        <br><a href="https://www.justwatches.com/"><h4>Click the image or Here for direct link</h4></a> <br><br>
-
-        <h3>Result :</h3><br>
-        <img src="images/our home.png" alt="" width="50%"><br>
+            <a href=""><img src="images/blog reff.jpg" alt="" width="100%" /></a
+            ><br />
+          </div>
+          <div class="column">
+            <h3>Result :</h3>
+            <br />
+            <img src="images/blog ref.jpg" alt="" width="100%" /><br />
+          </div>
         </div>
-        
-      <div class="mainContainer">
-        <hr> <h1>Footer</h1><hr>
-          <h3>Reference form :</h3><br>
-     
-          <a href=""><img src="images/LOGO.jpg" alt="" width="50%"></a><br>
-     
-          <h3>Result :</h3><br>
-          <img src="images/our footer.png" alt="" width="100%"><br>
+        <div class="grid-container">
+          <div class="left-text">
+            <h3>Referenced Blog Page</h3>
+            <p>
+              we adopted referencefor our blog page from the following page.
+              <br />Link for the page <a href="https://wordpress.com/create-blog/">View Link</a>
+            </p>
           </div>
-      <div class="mainContainer">
-         <hr> <h1>Blog</h1><hr>
-          <h3>Reference form :</h3><br>
-         
-          <a href=""><img src="images/LOGO.jpg" alt="" width="50%"></a><br>
-         
-          <h3>Result :</h3><br>
-          <img src="images/LOGO.jpg" alt="" width="50%"><br>
+          <div class="right-text">
+            <h3>Implemented Blog Page</h3>
+            <p>We used the blog page form the reference website and implemented it in our own way.</p>
           </div>
+        </div>
+      </div>
 
       <div class="mainContainer">
-        <hr> <h1>Product</h1><hr>
-          <h3>Reference form :</h3><br>
-             
-            <a href="https://www.justwatches.com/"> <img src="images/ref pro.png" alt=""></a><br>
-             <br><a href="https://www.justwatches.com/"><h4>Click the image or Here for direct link</h4></a> <br><br>
-            <h3>Result :</h3><br>
-           <img src="images/our prod.png" alt="" width="75%"><br>
-           </div>
+        <hr />
+        <h1>About Us</h1>
+        <hr />
+        <div class="row">
+          <div class="column">
+            <h3>Reference form :</h3>
+            <br />
 
+            <a href="https://youtu.be/HMqB4aASr0E?si=tN6LcVpvQhkl3rin"
+              ><img src="images/ref about us.png" alt="" width="100%" /></a
+            ><br />
+          </div>
+          <div class="column">
+            <h3>Result :</h3>
+            <br />
+            <img src="images/aboutus k.jpg" alt="" width="100%" /><br />
+          </div>
+        </div>
+        <div class="grid-container">
+          <div class="left-text">
+            <h3>Referenced About us Page</h3>
+            <p>
+              We picked up reference for our about us page from a youtube video.
+              <br />
+              Link for the video:<a
+                href="https://youtu.be/HMqB4aASr0E?si=tN6LcVpvQhkl3rin"
+                >View link</a
+              >
+            </p>
+          </div>
+          <div class="right-text">
+            <h3>Implemented about us</h3>
+            <p>
+              After taking the reference, we transformed it and implemented it
+              to our website .
+            </p>
+          </div>
+        </div>
+      </div>
       <div class="mainContainer">
-        <hr> <h1>About Us</h1><hr>
-         <h3>Reference form :</h3><br>
-        
-         <a href=""><img src="images/LOGO.jpg" alt="" width="50%"></a><br>
-        
-         <h3>Result :</h3><br>
-         <img src="images/LOGO.jpg" alt="" width="50%"><br>
-         </div>
-             
-             
+        <hr />
+        <h1>Research</h1>
+        <hr />
+        <div class="row">
+          <div class="column">
+            <h3>Reference form :</h3>
+            <br />
 
+            <a href=""><img src="images/research  reff.png" alt="" width="100%" /></a
+            ><br />
+          </div>
+          <div class="column">
+            <h3>Result :</h3>
+            <br />
+            <img src="images/research imp1.png" alt="" width="100%" height="75%" /><br />
+          </div>
+        </div>
+        <div class="grid-container">
+          <div class="left-text">
+            <h3>Referenced Research Page</h3>
+            <p>
+              we adopted referencefor our research pagefrom the following page.
+              <br />Link for the page: <a href="https://css-tricks.com/">View Link</a>
+            </p>
+          </div>
+          <div class="right-text">
+            <h3>Implemented Research Page</h3>
+            <p>we took  the format of this website and modified it into our own .</p>
+          </div>
+        </div>
+      </div>
     </main>
     <!-- main body ends here  -->
 

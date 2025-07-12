@@ -23,5 +23,23 @@ signUpCancle.addEventListener('click',(e)=>{
     Array.from(signUpForm).forEach((item)=>{
         item.classList.add("hidden");
     })
+
 })
+
+
+
+// know more of about us
+function toggleInfo(event) {
+    var item = event.target.parentElement.parentElement;
+    var extraInfo = item.querySelector(".hiddenContent");
+    var button = item.querySelector(".cardButton button");
+  
+    if (extraInfo.style.display === "none" || extraInfo.style.display === "") {
+        extraInfo.style.display = "block";
+        button.textContent = "Hide";
+    } else {
+        extraInfo.style.display = "none";
+        button.textContent = "Know More";
+    }
+  }
 

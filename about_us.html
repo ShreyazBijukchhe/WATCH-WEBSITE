@@ -1,63 +1,64 @@
-<!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Mama&Vanja Premium Watches</title>
     <style>
-      body {
-        background-color: #32445f;
-      }
+        body{
+            background-color: #32445f;
+        }
     </style>
 
     <!-- link to external css  -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+    
 
     <!-- link to font awesome  -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      rel="stylesheet"
-    />
-  </head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
-  <body>
+</head>
+
+<body>
     <!-- header start  -->
     <header>
-      <div class="navTop" style="background-color: #edf1e6fd">
-        <div class="contact">
-          <span> &#9742; +977 0000000000</span>
-          <span>|</span>
-          <span>&#9993; watches@gmail.com</span>
-        </div>
+        <div class="navTop" style="background-color: #edf1e6fd;">
+            <div class="contact">
+                <span> &#9742; +977 9864890530</span>
+                <span>|</span>
+                <span>&#9993; mama.vanja.watches@gmail.com</span>
 
-        <div class="socialMedia">
-          <span
-            >Follow us on:
-            <a href=""
-              ><i class="fab fa-facebook" style="font-size: 20px"></i
-            ></a>
-          </span>
-          <span>
-            <a href=""
-              ><i class="fa-brands fa-instagram" style="font-size: 20px"></i
-            ></a>
-          </span>
+            </div>
+            
+            <div class="socialMedia">
+                <span>Follow us on: 
+                    <a href="https://www.facebook.com/profile.php?id=100025502873457" target="_blank"><i class="fab fa-facebook" style="font-size: 20px;"></i></a>
+                </span>
+                <span>
+                    <a href="https://www.instagram.com/d_sandeepgrg/" target="_blank"><i class="fa-brands fa-instagram"  style="font-size: 20px;"></i></a>
+                </span>
+            </div>
+
         </div>
-      </div>
-      <nav>
-        <img src="" alt="LOGO" />
-        <ul>
-          <li><a class="activeLink" href="home.html">Home</a></li>
-          <li><a href="product.html">Product</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="about_us.html">About Us</a></li>
-        </ul>
-        <div>
-          <a href=""><i class="fa-solid fa-cart-shopping"></i>Cart</a>
-          <button class="btn" id="signUp">Sign up</button>
-        </div>
-      </nav>
+        <nav >
+            <div  class="logo">
+                <img src="" alt="LOGO">
+                <!-- <img src="static/img/logo.jpg" alt="LOGO"> -->
+            </div>
+            <ul>
+                <li  ><a href="home.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+            </ul>
+            <div>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i>Cart</a>
+                <button class="btn" id="signUp">Sign up</button>
+            </div>
+        </nav>
+
     </header>
     <!-- header end  -->
 
@@ -108,8 +109,11 @@
               My name is Sandeep. I am a developer at mama vanja watches.
               <div>Email :sandeepgrg939@gmail.com <br />Phone : 9864890530</div>
             </div>
+            <div class="hiddenContent" >
+              <p>More details about me: I specialize in web development, backend technologies, and UI/UX design.</p>
+            </div>
             <div class="cardButton">
-              <button>Know More</button>
+              <button onclick="toggleInfo(event)">Know More</button>
             </div>
           </div>
 
@@ -124,9 +128,12 @@
               My name is Shashank. I am a developer at mama vanja watches.
               <div>Email : shashank@gmail.com <br />Phone : 980000000</div>
             </div>
-            <div class="cardButton">
-              <button>Know More</button>
-            </div>
+            <div class="hiddenContent">
+              <p>More details about me: I specialize in web development, backend technologies, and UI/UX design.</p>
+          </div>
+          <div class="cardButton">
+              <button onclick="toggleInfo(event)">Know More</button>
+          </div>
           </div>
 
           <div style="height: 430px" class="card">
@@ -144,9 +151,12 @@
               My name is Yubraj. I am a developer at mama vanja watches.
               <div>Email : yubraj@gmail.com <br />Phone : 000000</div>
             </div>
-            <div class="cardButton">
-              <button>Know More</button>
-            </div>
+            <div class="hiddenContent" >
+              <p>More details about me: I specialize in web development, backend technologies, and UI/UX design.</p>
+          </div>
+          <div class="cardButton">
+              <button onclick="toggleInfo(event)">Know More</button>
+          </div>
           </div>
 
           <div style="height: 430px" class="card">
@@ -160,9 +170,12 @@
               My name is Shreyaz. I am a developer at mama vanja watches.
               <div>Email : Shreyaz@gmail.com <br />Phone : 980000000</div>
             </div>
-            <div class="cardButton">
-              <button>Know More</button>
-            </div>
+            <div class="hiddenContent" >
+              <p>More details about me: I specialize in web development, backend technologies, and UI/UX design.</p>
+          </div>
+          <div class="cardButton">
+              <button onclick="toggleInfo(event)">Know More</button>
+          </div>
           </div>
 
           <div style="height: 430px" class="card">
@@ -175,108 +188,94 @@
             <div class="cardDescription">
               My name is Samir. I am a developer at mama vanja watches.
               <div>Email : samir@gmail.com <br />Phone : 00000</div>
+              <div class="hiddenContent">
+                <p>More details about me: I specialize in web development, backend technologies, and UI/UX design.</p>
             </div>
             <div class="cardButton">
-              <button>Know More</button>
+                <button onclick="toggleInfo(event)">Know More</button>
             </div>
-          </div>
         </div>
       </div>
     </main>
     <!-- main body ends here  -->
 
     <!-- footer starts here  -->
-    <footer>
+    <footer >
       <div class="footerContainer">
-        <!-- newsletter subscription          -->
-        <div>
+          <!-- newsletter subscription          -->
+      <div>
           <h3>Subscribe to our newsletter</h3>
           <p>Be the first to know about our research and new arrivals</p>
           <span>
-            <form action="">
-              <input name="email" type="email" placeholder="Enter your email" />
-              <button
-                class="btn"
-                style="background-color: black; color: white; padding: 10px"
-              >
-                Subscribe
-              </button>
-            </form>
+              <form action="">
+                  <input required name="email" type="email" placeholder="Enter your email">
+                  <button class="btn" style="background-color: #32445f; color: white;padding: 10px;" > Subscribe</button>
+              </form>
           </span>
-        </div>
-        <!-- newsletter subscription  -->
+      </div>
+      <!-- newsletter subscription  -->
 
-        <!-- verticle divider line  -->
-        <div class="verticleLine"></div>
+      <!-- verticle divider line  -->
+      <div class="verticleLine"></div>
 
-        <!-- sending some inquiries  -->
-        <div>
+      <!-- sending some inquiries  -->
+      <div>
           <h3>Contact Us</h3>
           <form action="">
-            <input type="email" name="email" placeholder="Email" /><br />
-            <textarea
-              type="text"
-              name="message"
-              placeholder="Write a msg..."
-            ></textarea
-            ><br />
-            <button class="btn" type="submit">Submit</button>
+              <input required type="email" name="email" placeholder="Email"><br>
+              <textarea type="text" name="message" placeholder="Write a msg..." ></textarea><br>
+              <button class="btn" type="submit">Submit</button>
           </form>
-        </div>
-        <!-- sendign some enquiries  -->
-
-        <!-- verticle divider line  -->
-        <div class="verticleLine"></div>
-
-        <!-- extra info  -->
-        <div>
-          <h3>Policies</h3>
-          <a style="display: block; padding-top: 2px" href=""
-            >Shipping & Order Policies</a
-          >
-          <a style="display: block; padding-top: 2px" href=""
-            >Warranty Policies</a
-          >
-          <a style="display: block; padding-top: 2px" href=""
-            >Privacy Policies</a
-          >
-        </div>
-        <!-- extra info  -->
       </div>
-      <div style="text-align: center">&copy; - 2024. All rights reserved.</div>
-    </footer>
-    <!-- footer ends here  -->
+      <!-- sendign some enquiries  -->
 
-    <!-- signup form is hidden using display none and hidden class and the hidden
-     class is removed when signup button is clicked -->
-    <div class="signUpForm hidden">
+       <!-- verticle divider line  -->
+       <div class="verticleLine"></div>
+
+       <!-- extra info  -->
+       <div>
+           <h3>Policies </h3>
+           <a style="display: block; padding-top: 2px;" href="">Shipping & Order Policies</a>
+           <a style="display: block; padding-top: 2px;" href="">Warranty Policies</a>
+           <a style="display: block; padding-top: 2px;" href="">Privacy Policies</a>
+       </div>
+       <!-- extra info  -->
+
+      </div>
+       <div style="text-align: center;">
+          &copy; - 2024. All rights reserved.
+       </div>
+
+   </footer>
+   <!-- footer ends here  -->
+
+
+  
+       <!-- signup form is hidden using display none and hidden class and the hidden
+   class is removed when signup button is clicked -->
+   <div class="signUpForm hidden">
       <div class="formContainer">
-        <h3 style="color: white">Sign Up</h3>
-        <form action="">
-          <input type="text" name="fName" placeholder="First Name" />
-          <input type="text" name="lName" placeholder="Last Name" />
-          <input type="email" name="email" placeholder="Email" />
-          <input type="password" name="password1" placeholder="Password" />
-          <input
-            type="password"
-            name="password2"
-            placeholder="Confirm Password"
-          />
-          <div>
-            <button class="btn" type="submit">Submit</button>
-            <button
-              class="btn"
-              id="signUpCancle"
-              style="background-color: tomato"
-            >
-              Cancle
-            </button>
-          </div>
-        </form>
+          <h3 style="color:white">Sign Up</h3>
+          <form action="">
+              <input  required type="text" name="fName" placeholder="First Name">
+              <div id="fnameError"></div>
+              <input   required type="text" name="lName" placeholder="Last Name">
+              <div  id="lnameError"></div>
+              <input  required type="email" name="email" placeholder="Email">
+              <div id="emailError"></div>
+              <input  required type="password" name="password1" placeholder="Password">
+              <input  required type="password" name="password2" placeholder="Confirm Password">
+              <div id="confirmPasswordError"></div>
+              <div>
+                  <button class="btn" type="submit">Submit</button>
+                  <button class="btn" id="signUpCancel"  style="background-color: tomato;">Cancel</button>
+              </div>
+          </form>
       </div>
-    </div>
+   </div>
 
-    <!-- link to external js file  -->
-    <script src="script/main.js"></script>
-  </body>
+   <!-- link to external js file  -->
+  <script src="script/main.js"></script>
+</body>
 </html>
+
